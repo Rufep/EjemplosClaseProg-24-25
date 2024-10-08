@@ -81,6 +81,19 @@ public class BucleWhile {
 				System.out.println(letra + " Aparece " + contador + " veces");
 			}
 			
+			//encontrar la posicion de la primera aparicion de un caracter en un String
+			
+			int posicion2=-1;//inicializo a valor absurdo
+			j=0;// reseteo variable de control contaminada por algoritmo anterior
+			while(j<frase.length()) {
+				if(frase.charAt(j)==letra) {
+					posicion2=j;
+					break;//Salir precipitadamente, antes de que se deje de cumplir la condicion de continuidad
+				}
+				j++;
+			}
+			System.out.println(letra + " Aparece en la posicio: " + posicion2);
+
 	}
 	
 }
